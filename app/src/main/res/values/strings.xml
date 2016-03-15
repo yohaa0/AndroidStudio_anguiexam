@@ -2,7 +2,7 @@
 <resources>
 
     <!-- 通用 -->
-    <string name="app_name">安规练习系统</string>
+    <string name="app_name">安规习题集</string>
     <string name="action_settings">Settings</string>
     <string name="title_image_description"></string>
     <string name="tab_image_description">跳转</string>
@@ -59,7 +59,7 @@
     <string-array name="main_title">
         <item name="exam">练习与考试</item>
         <item name="classics">填空问答案例</item>
-        <item name="more">更多</item>
+        <item name="more">相关说明</item>
     </string-array>
     <!-- 统计 -->
     <string name="statistics_topic">考题练习</string>
@@ -118,26 +118,16 @@
         <item name="copyright">关于版权</item>
     </string-array>
     <string-array name="more_details">
-        <item name="more_agreement">"       "请您在使用本软件前仔细阅读如下条款。包括免除或者限制作者责任的免责条款及对用户的权利限制。您的安装使用行为将视为对本《协议》的接受，并同意接受本《协议》各项条款的约束。\n
+        <item name="more_agreement">"       "请您在使用本软件前仔细阅读如下条款。在您阅读本声明后若不同意此声明中的任何条款，或对本声明存在质疑，请立刻停止使用软件。若您已经开始或正在使用本软件，则表示您已阅读并同意本声明的所有条款之约定。\n
    					 \n
 一、本《协议》授予您下列权利：\n
-   "       "您可安装无限制数量的本软件产品来使用。
-          您可以复制、分发和传播无限制数量的软件产品，但您必须保证每一份复制、分发和传播都必须是完整和真实的，
-          包括所有有关本软件产品的软件、版权、亦包括本协议。\n
+   "       "您可安装使用本软件。可以复制、分发和传播本软件产品，但因公司或个人传播软件可能造成的任何法律事件本人不负任何责任。\n
 					\n
 二、用户无权实施包括但不限于下列行为：\n
-   "      "不得通过反编译等手段任意修改本软件的代码并随意传播（目的仅是开发爱好者用于交流的除外），任何对于本软件修改的公开发布，均必须由本软件作者完成。本软件作者保留对侵权行为采取法律允许的措施的权利。\n
-         用户不得利用本软件误导、欺骗他人。\n
+   "      "使用本软件而引致之任何意外、疏忽、版权或知识产权侵犯及其所造成的损失，本人概不负责，亦不承担任何法律责任。
+\n
         \n
-三、本软件以学习交流为目的，承诺不会有以下（包括但不局限于）获取您的隐私或产生费用的行为，请您放心使用!:)\n
-   1、发送短信;\n
-   2、拨打电话;\n
-   3、监听通话;\n
-   4、获取通话状态;\n
-   5、读取短信记录;\n
-   6、读取联系人记录;\n
-   7、读取通话记录;\n
-   8、讨厌的广告推送。\n
+三、本软件以学习交流为目的，尊重并保护所有用户的个人隐私权，不会窃取用户的任何信息。\n
    \n
 四、 免责声明\n
 "       "任何使用盗版软件造成的问题均与本软件作者无关。\n </item>
@@ -145,14 +135,14 @@
         \n
 "       "新浪微博：待开发\n
 "       "腾讯微博：待开发\n</item>
-        <item name="more_copyright">" "软件名:安规练习系统\n
-	版本号：16.2.29.1\n
- 	开发：赵全军\n </item>
+        <item name="more_copyright">" "软件名:安规习题集\n
+	版本号：16.3.15.1\n
+ 	开发：yohaa\n </item>
     </string-array>
 
     <!-- Share Friend -->
     <string name="share_friend">分享给好友</string>
-    <string name="share_app_to_friend">感觉还不错，推荐给好友~</string>
-    <string name="recommendation">我正在使用安规练习系统，感觉还不错，下载地址：http://</string>
+    <string name="share_app_to_friend">推荐分享</string>
+    <string name="recommendation">我正在使用安规习题练习系统，感觉还不错，下载地址：http://</string>
     <string name="thanks_for_recommend">谢谢您的推荐</string>
 </resources>

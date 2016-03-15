@@ -15,6 +15,6 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:contentDescription="@string/welcome"
-        android:src="@drawable/bg_welcome_land" />
+        android:src="@drawable/welcome1" />
 
 </RelativeLayout>

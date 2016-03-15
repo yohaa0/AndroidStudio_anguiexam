@@ -26,7 +26,13 @@
                 android:layout_marginLeft="80dp"
                 android:background="@drawable/main_exam_sequence"
                 android:onClick="toSequence" />
-
+            <Button
+                android:id="@+id/btn_main_exam_practice_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/main_exam_practice_test"
+                android:onClick="toPracticeTest" />
             <Button
                 android:id="@+id/btn_main_exam_random"
                 android:layout_width="wrap_content"
@@ -41,17 +47,11 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:layout_marginTop="8dp" >
 
-            <Button
-                android:id="@+id/btn_main_exam_practice_test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/main_exam_practice_test"
-                android:onClick="toPracticeTest" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="44dp"
+                android:layout_marginLeft="80dp"
                 android:background="@drawable/main_exam_chapters"
                 android:onClick="toChapters" />
 
@@ -73,25 +73,27 @@
                 android:id="@+id/btn_main_exam_intensify"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="44dp"
+                android:layout_centerInParent="true"
                 android:background="@drawable/main_exam_intensify"
                 android:onClick="toIntensify" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp" 
-            android:layout_weight="1"
-            android:layout_marginTop="8dp" >
-
             <Button
                 android:id="@+id/btn_main_exam_statistics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="80dp"
                 android:background="@drawable/main_exam_statistics"
                 android:onClick="toStatistics" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp" >
+
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -112,9 +114,8 @@
                 android:id="@+id/btn_main_exam_collect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@id/btn_main_exam_wrong_topic"
-                android:layout_marginLeft="4dp"
-                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
                 android:background="@drawable/main_exam_collect"
                 android:onClick="toCollect" />
 
@@ -122,9 +123,8 @@
                 android:id="@+id/btn_main_exam_record"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/btn_main_exam_wrong_topic"
-                android:layout_marginRight="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
                 android:background="@drawable/main_exam_record"
                 android:onClick="toRecord" />
         </RelativeLayout>

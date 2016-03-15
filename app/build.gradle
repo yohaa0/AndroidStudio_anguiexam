@@ -1,20 +1,41 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'anguiExam'
+            keyPassword '200281'
+            storeFile file('H:/AndroidStudioProjects/yohaa_jks.jks')
+            storePassword '200281'
+        }
+    }
     compileSdkVersion 17
     buildToolsVersion "23.0.2"
-
     defaultConfig {
         applicationId "com.angui.exam"
         minSdkVersion 11
         targetSdkVersion 17
     }
-
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            shrinkResources false
         }
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+    }
+    productFlavors {
+        xiaomi {}
+        qihu360 {}
+        baidu {}
+        wandoujia {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
 }
 

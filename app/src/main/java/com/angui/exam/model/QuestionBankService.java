@@ -1,13 +1,13 @@
 package com.angui.exam.model;
 
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
-
-import android.annotation.SuppressLint;
-import android.content.ContentValues;
-import android.content.Context;
 
 @SuppressLint("UseSparseArrays")
 public class QuestionBankService extends CommonEntryDao {
@@ -68,6 +68,7 @@ public class QuestionBankService extends CommonEntryDao {
 	}
 //随机取题
 	public ArrayList<Map<String, Object>> testSearch(Context context) {
+
 		String whereClause = "type<=2";
 		examMap = new HashMap<Integer, Integer>();
 		ArrayList<Map<String, Object>> tempList = super.getEntryList(context,
@@ -78,6 +79,9 @@ public class QuestionBankService extends CommonEntryDao {
 		System.out.println("SIZE:" + size);
 		int sizeNumber;
 		int topicId;
+//设置考试题目数量
+		int Topic_quantity=50;
+//2016/3/17
 		int count = 1;
 		while (size > 0) {
 			sizeNumber = random.nextInt(size);
@@ -86,7 +90,7 @@ public class QuestionBankService extends CommonEntryDao {
 			backList.add(tempList.get(sizeNumber));
 			tempList.remove(sizeNumber);
 			size = tempList.size();
-			if (count == 100) {//设置考试题目数量
+			if (count == Topic_quantity) {      //设置考试题目数量
 				break;
 			}
 			count++;

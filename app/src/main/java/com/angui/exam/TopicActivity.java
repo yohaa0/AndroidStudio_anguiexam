@@ -1,14 +1,5 @@
 package com.angui.exam;
 
-import java.util.Calendar;
-
-import com.angui.exam.adapter.TopicFragmentCallBacks;
-import com.angui.exam.controller.TopicController;
-import com.angui.exam.util.FileUtil;
-import com.angui.exam.util.UiUtil;
-import com.angui.exam.util.WindowUtil;
-import com.angui.exam.R;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -23,16 +14,24 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageButton;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.PopupWindow;
 import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
+
+import com.angui.exam.adapter.TopicFragmentCallBacks;
+import com.angui.exam.controller.TopicController;
+import com.angui.exam.util.FileUtil;
+import com.angui.exam.util.UiUtil;
+import com.angui.exam.util.WindowUtil;
+
+import java.util.Calendar;
 
 @SuppressLint("InflateParams") public class TopicActivity extends FragmentActivity {
 	private ViewPager topic_pager;
@@ -355,11 +354,14 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 							public void onClick(DialogInterface dialog,
 									int which) {
 								// TODO Auto-generated method stub
+//{每一题多少分
+								int Score_per_question=2;
+//}
 								String useTime = ch_topic_test.getText()
 										.toString();
 								int totalCount = tc.getRightCount()
 										+ tc.getWrongCount();
-								int totalScore = tc.getRightCount() * 1;//每一题多少分
+								int totalScore = tc.getRightCount() * Score_per_question;//每一题多少分
 								Calendar c = Calendar.getInstance();
 								String dateTime = c.get(Calendar.YEAR) + "-"
 										+ ((Integer)c.get(Calendar.MONTH)+1) + "-"

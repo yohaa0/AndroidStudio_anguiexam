@@ -1,17 +1,15 @@
 package com.angui.exam;
 
 
-import com.angui.exam.controller.WelcomeController;
-import com.angui.exam.R;
-
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.annotation.SuppressLint;
-
-import android.content.Intent;
 import android.view.WindowManager;
 import android.widget.ImageView;
+
+import com.angui.exam.controller.WelcomeController;
 
 
 public class WelcomeActivity extends BaseActivity {
@@ -38,7 +36,7 @@ public class WelcomeActivity extends BaseActivity {
 				while (b < 2) {
 					try {
 						if (b == 0) {
-							Thread.sleep(500);
+							Thread.sleep(600);
 							b = 1;
 						} else {
 							Thread.sleep(100);

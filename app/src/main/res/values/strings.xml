@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!--考题数量分数设置
+    <string name="Topic_quantity">50</string>
+    <string name="Score_per_question">2</string>
+    -->
     <!-- 通用 -->
     <string name="app_name">安规习题集</string>
     <string name="action_settings">Settings</string>

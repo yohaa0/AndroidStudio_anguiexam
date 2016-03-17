@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import com.angui.exam.model.ExamResultEntry;
 import com.angui.exam.model.ExamResultService;
-import com.angui.exam.R;
 
 public class DetailsRecordActivity extends BaseActivity {
 	TextView tv_title;
@@ -59,23 +58,14 @@ public class DetailsRecordActivity extends BaseActivity {
 		detail_date.setText(entry.getDateTime());
 		detail_usetime.setText(entry.getUseTime());
 		detail_sum_answer_right.setText(getResources().getString(
-				R.string.detail_total)
-				+ entry.getRightCount()
-				+ getResources().getString(R.string.detail_answer));
+				R.string.detail_total)+ entry.getRightCount()+ getResources().getString(R.string.detail_answer));
 		detail_sum_answer_error.setText(getResources().getString(
-				R.string.detail_total)
-				+ entry.getWrongCount()
-				+ getResources().getString(R.string.detail_answer));
+				R.string.detail_total)+ entry.getWrongCount()+ getResources().getString(R.string.detail_answer));
 		detail_sum_anserquestion.setText(getResources().getString(
-				R.string.detail_total)
-				+ entry.getTotalCount()
-				+ getResources().getString(R.string.detail_answer));
-		detail_accuracy.setText(""
-				+ (int) (100 * (float) entry.getRightCount() / (float) entry
-						.getTotalCount())
-				+ getResources().getString(R.string.detail_qw));
-		detail_score.setText(entry.getTotalScore()
-				+ getResources().getString(R.string.detail_point));
+				R.string.detail_total)+ entry.getTotalCount()+ getResources().getString(R.string.detail_answer));
+		detail_accuracy.setText(""+ (int) (100 * (float) entry.getRightCount() / (float) entry
+						.getTotalCount())+ getResources().getString(R.string.detail_qw));
+		detail_score.setText(entry.getTotalScore()+ getResources().getString(R.string.detail_point));
 	}
 
 	public void deleteRecord(View view) {

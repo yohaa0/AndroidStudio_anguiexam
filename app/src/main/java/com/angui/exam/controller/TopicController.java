@@ -1,9 +1,12 @@
 package com.angui.exam.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.Context;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.angui.exam.adapter.TopicFragmentCallBacks;
 import com.angui.exam.adapter.TopicPagerAdapter;
@@ -12,13 +15,10 @@ import com.angui.exam.model.QuestionBankService;
 import com.angui.exam.model.TempTableService;
 import com.angui.exam.util.SharedPreferencesUtil;
 
-import android.annotation.SuppressLint;
-import android.content.ContentValues;
-import android.content.Context;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 @SuppressLint("UseSparseArrays")
 public class TopicController {
@@ -48,6 +48,7 @@ public class TopicController {
 
 	public static final int TYPE_CHOICE = 1;
 	public static final int TYPE_RW = 2;
+	public static final int TYPE_MUL_CHOICE = 4;//multiple-choice
 
 	//考试
 	private int wrongCount;

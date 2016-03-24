@@ -28,9 +28,10 @@
                 android:drawableTop="@drawable/home_sxlx_n"
                 android:text="@string/exam_sequence"
                 android:textSize="15sp"
-                android:textColor="#4545d1" />
+                android:textColor="#4545d1"
+                android:onClick="toSequence"/>
             <Button
-                android:id="@+id/btn_main_exam_practice_test"
+                android:id="@+id/btn_main_exam_random"
                 android:layout_width="85dp"
                 android:layout_height="90dp"
                 android:layout_centerInParent="true"
@@ -41,7 +42,7 @@
                 android:textColor="#4545d1"
                 android:onClick="toRandom"  />
             <Button
-                android:id="@+id/btn_main_exam_random"
+                android:id="@+id/btn_main_exam_practice_test"
                 android:layout_width="85dp"
                 android:layout_height="90dp"
                 android:layout_alignParentRight="true"

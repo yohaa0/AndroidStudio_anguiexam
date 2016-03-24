@@ -19,31 +19,39 @@
 
             <Button
                 android:id="@+id/btn_main_exam_sequence"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="35dp"
-                
-                android:background="@drawable/main_exam_sequence"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/home_sxlx_n"
+                android:text="@string/exam_sequence"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toSequence" />
 
             <Button
                 android:id="@+id/btn_main_exam_random"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_centerInParent="true"
-                
-                
-                android:background="@drawable/main_exam_random"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/home_sjlx_n"
+                android:text="@string/exam_random"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toRandom" />
             <Button
                 android:id="@+id/btn_main_exam_practice_test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="35dp"
-                
-                android:background="@drawable/main_exam_practice_test"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/home_mnks_n"
+                android:text="@string/practice_test"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toPracticeTest" />
         </RelativeLayout>
 
@@ -55,31 +63,40 @@
 
             <Button
                 android:id="@+id/btn_main_exam_chapters"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="35dp"
-                
-                android:background="@drawable/main_exam_chapters"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/home_zjlx_n"
+                android:text="@string/exam_chapters"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toChapters" />
 
             <Button
                 android:id="@+id/btn_main_exam_intensify"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_centerInParent="true"
-                                
-                android:background="@drawable/main_exam_intensify"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/home_qhlx_s"
+                android:text="@string/exam_intensify"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toIntensify" />
             
             <Button
                 android:id="@+id/btn_main_exam_statistics"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="35dp"
-                
-                android:background="@drawable/main_exam_statistics"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/vip_home_tj_n"
+                android:text="@string/test_test"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toStatistics" />
         </RelativeLayout>
 
@@ -93,32 +110,40 @@
             android:layout_marginTop="28dp"  >
 
             <Button
+                android:id="@+id/btn_main_exam_collect"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/vip_home_wdsc_n"
+                android:text="@string/exam_collect"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
+                android:onClick="toCollect" />
+            <Button
                 android:id="@+id/btn_main_exam_wrong_topic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-				android:layout_centerInParent="true"
-				
-                android:background="@drawable/main_exam_wrong_topic"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/vip_home_wdct_n"
+                android:text="@string/exam_wrong_topic"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toWrongTopic" />
 
             <Button
-                android:id="@+id/btn_main_exam_collect"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="35dp"
-                
-                android:background="@drawable/main_exam_collect"
-                android:onClick="toCollect" />
-
-            <Button
                 android:id="@+id/btn_main_exam_record"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="35dp"
-                
-                android:background="@drawable/main_exam_record"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/home_ksjl_n"
+                android:text="@string/exam_score"
+                android:textSize="15sp"
+                android:textColor="#4545d1"
                 android:onClick="toRecord" />
 
         </RelativeLayout>

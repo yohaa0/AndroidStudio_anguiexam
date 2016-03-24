@@ -97,11 +97,20 @@
         <item name="exam_wrong_topic">错题本</item>
         <item name="exam_collect">我的收藏</item>
     </string-array>
-
+    <string name="exam_sequence">顺序练习</string>
+    <string name="exam_random">随机练习</string>
+    <string name="exam_chapters">章节练习</string>
+    <string name="exam_intensify">强化练习</string>
+    <string name="practice_test">模拟测试</string>
+    <string name="test_test">统    计</string>
+    <string name="exam_wrong_topic">错题本</string>
+    <string name="exam_collect">我的收藏</string>
+    <string name="exam_score">我的成绩</string>
     <string name="topic_last_question">已经是最后一题了</string>
     <string name="topic_first_question">已经是第一题了</string>
     <string name="topic_preTopic">上一题</string>
     <string name="topic_nextTopic">下一题</string>
+    <string name="back">返回</string>
     <string name="topic_answer_show">查看答案</string>
     <string name="topic_answer_hide">答题模式</string>
     <string name="topic_set_collect">收藏此题</string>

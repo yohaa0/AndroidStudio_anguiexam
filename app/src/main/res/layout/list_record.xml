@@ -17,7 +17,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="16dp"
-            android:src="@drawable/tab_main_exam_unselected" />
+            android:src="@drawable/record" />
 <!--    </RelativeLayout>
 
     <RelativeLayout

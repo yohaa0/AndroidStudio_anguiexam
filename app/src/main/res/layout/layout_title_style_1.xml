@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rl_title"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
     android:background="@color/main_bg"
      >
 
-        <ImageView
+        <Button
             android:id="@+id/btn_title_back"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/ic_menu_revert"
-            android:contentDescription="@string/title_image_description"
+            android:background="@anim/btn_back_2"
+            android:text="@string/back"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
             android:onClick="toBack"
             />
 
@@ -24,7 +28,7 @@
             android:layout_centerInParent="true"
             android:textColor="#ffffff"
             android:textIsSelectable="false"
-            android:textSize="24sp" /> 
+            android:textSize="18sp" />
          <ImageView
             android:id="@+id/btn_title_menu"
             android:layout_width="wrap_content"

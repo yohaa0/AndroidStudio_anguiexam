@@ -6,14 +6,18 @@
     android:background="@drawable/bg_title"
      >
 
-        <ImageView
+        <Button
             android:id="@+id/btn_title_shot"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:src="@android:drawable/ic_menu_revert"
-            android:contentDescription="@string/title_image_description"
+            android:background="@anim/btn_back_2"
+            android:text="@string/back"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
             android:onClick="toBack"
             />
 

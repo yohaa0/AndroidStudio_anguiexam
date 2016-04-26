@@ -1,9 +1,4 @@
 package com.angui.exam;
-import java.util.Map;
-
-import com.angui.exam.model.QuestionBankService;
-import com.angui.exam.R;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +6,10 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.angui.exam.model.QuestionBankService;
+
+import java.util.Map;
 
 public class ClassicsActivity extends BaseActivity {
 	private QuestionBankService questionBankService;
@@ -50,7 +49,7 @@ public class ClassicsActivity extends BaseActivity {
 					R.string.classics_not_show_answer));
 			tv_classics_answer.setVisibility(LinearLayout.VISIBLE);
 			bl_answer = false;
-			//Toast用户输入,字符比较出错，待查
+			//Toast用户输入
 			String S_answer=(tv_classics_answer.getText().toString()).trim();
 			String S_useranswer=(editText.getText().toString()).trim();
 			String inputText = "你的答案:"+S_useranswer+" 正确";

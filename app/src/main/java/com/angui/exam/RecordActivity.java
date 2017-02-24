@@ -1,23 +1,21 @@
 package com.angui.exam;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
-import com.angui.exam.RecordActivity;
 import com.angui.exam.model.ExamResultEntry;
 import com.angui.exam.model.ExamResultService;
-import com.angui.exam.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class RecordActivity extends BaseActivity
 {

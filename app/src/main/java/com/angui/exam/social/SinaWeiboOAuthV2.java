@@ -1,18 +1,18 @@
 package com.angui.exam.social;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
+
 import com.weibo.sdk.android.Oauth2AccessToken;
 import com.weibo.sdk.android.Weibo;
 import com.weibo.sdk.android.WeiboAuthListener;
 import com.weibo.sdk.android.WeiboDialogError;
 import com.weibo.sdk.android.WeiboException;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
-
 public class SinaWeiboOAuthV2 extends Activity {
-	private Weibo mWeibo;
+	private Weibo mWeibo = Weibo.getInstance(CONSUMER_KEY, REDIRECT_URL);
 	private static final String CONSUMER_KEY = "3124960049";// 替换为开发者的appkey，例如"1646212860";
 	private static final String REDIRECT_URL = "http://apps.weibo.com/exam_android";
 	public static Oauth2AccessToken accessToken;
@@ -22,7 +22,6 @@ public class SinaWeiboOAuthV2 extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		mWeibo = Weibo.getInstance(CONSUMER_KEY, REDIRECT_URL);
 		mWeibo.authorize(SinaWeiboOAuthV2.this, new AuthDialogListener());
 	}
 

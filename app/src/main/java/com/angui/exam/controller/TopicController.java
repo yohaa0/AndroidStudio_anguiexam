@@ -48,8 +48,8 @@ public class TopicController {
 
 	public static final int TYPE_CHOICE = 1;
 	public static final int TYPE_RW = 2;
-	public static final int TYPE_MUL_CHOICE = 4;//multiple-choice
-
+	public static final int TYPE_MUL_CHOICE = 4;//多选题
+	// 根据数据库内容，获得题库:1-单选题；2-判断题；3-问答填空；4-多选题；
 	//考试
 	private int wrongCount;
 	private int rightCount;

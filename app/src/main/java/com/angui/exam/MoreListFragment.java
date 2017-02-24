@@ -48,7 +48,7 @@ public class MoreListFragment extends ListFragment
 		/**
 		 * Callback for when an item has been selected.
 		 */
-		public void onMoreItemSelected(int position);
+		void onMoreItemSelected(int position);
 	}
 
 	/**

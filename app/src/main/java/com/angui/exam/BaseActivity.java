@@ -13,7 +13,7 @@ import com.angui.exam.util.FileUtil;
  * @author sxenon 所有Activity的共同特征，比方说没有状态栏 不能直接使用！！！
  */
 public abstract class BaseActivity extends Activity {
-	private FileUtil fu;
+	private FileUtil fu = new FileUtil(this);
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,6 @@ public abstract class BaseActivity extends Activity {
 
 	// 截屏
 	public void shotView(View view) {
-		fu = new FileUtil(this);
 		Bitmap bm = fu.shotAndSave(fu.getPic_path());
 		Intent toShare = new Intent(this, ShareFriendActivity.class);
 		startActivity(toShare);

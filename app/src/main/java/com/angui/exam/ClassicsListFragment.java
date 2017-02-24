@@ -1,18 +1,17 @@
 package com.angui.exam;
 
 
-import java.util.ArrayList;
-import java.util.Map;
-
-import com.angui.exam.controller.MainTabController;
-import com.angui.exam.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.angui.exam.controller.MainTabController;
+
+import java.util.ArrayList;
+import java.util.Map;
 
 /**
  * A list fragment representing a list of Detail. This fragment also supports
@@ -25,7 +24,6 @@ import android.widget.ListView;
  */
 public class ClassicsListFragment extends ListFragment {
 
-	private MainTabController mtc;
 	private ArrayList<Map<String,Object>> classicsEntryList;
 	/**
 	 * The serialization (saved instance state) Bundle key representing the
@@ -53,7 +51,7 @@ public class ClassicsListFragment extends ListFragment {
 		/**
 		 * Callback for when an item has been selected.
 		 */
-		public void onClassicsIdSelected(int classicsId);
+		void onClassicsIdSelected(int classicsId);
 	}
 
 	/**
@@ -76,8 +74,8 @@ public class ClassicsListFragment extends ListFragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mtc=new MainTabController(getActivity());
-		classicsEntryList=mtc.getClassicsEntryList();
+		MainTabController mtc = new MainTabController(getActivity());
+		classicsEntryList= mtc.getClassicsEntryList();
 		ArrayList<String> contents=new ArrayList<String>();
 		for(int i=0;i<classicsEntryList.size();i++){
 			contents.add((i+1)+". "+(String.valueOf(classicsEntryList.get(i).get("question"))));
